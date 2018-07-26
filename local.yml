@@ -2,4 +2,6 @@
 - hosts: localhost
   tasks;
     - name: Creat File
-      file: path=/home/rps/pull.txt state=touch  
+      file: path=/home/rps/pullnew.txt state=touch  
+    - name: Add user
+      user: name=mk state=present
